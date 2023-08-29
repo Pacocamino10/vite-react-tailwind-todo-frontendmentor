@@ -1,4 +1,4 @@
-import MoonIcon from "./icons/MoonIcon";
+import IconMoon from "./icons/IconMoon";
 const Header = () => {
   return (
     <header className="container mx-auto px-4 pt-8  ">
@@ -7,7 +7,7 @@ const Header = () => {
           Todo
         </h1>
         <button>
-          <MoonIcon className=" fill-red-400" />
+          <IconMoon className=" fill-red-400" />
         </button>
       </div>
     </header>

@@ -1,14 +1,14 @@
-import TodoItem from "./TodoItem"
-import CrossIcon from "./icons/CrossIcon"
-const TodoList = () => { 
-    return (
-        <div className="bg-white rounded-t-md [&>article]:p-4 mt-8">
-          <TodoItem/>
-          <TodoItem/>
-          <TodoItem/>
+import TodoItem from "./TodoItem";
 
-      </div>
-    )
- }
+const TodoList = ({ todos,removeTodo,updateTodo}) => {
 
- export default TodoList
+  return (
+    <div className="bg-white rounded-t-md [&>article]:p-4 mt-8">
+      {todos.map((todo) => (
+        <TodoItem key={todo.id} todo={todo} removeTodo={removeTodo} updateTodo={updateTodo}/>
+      ))}
+    </div>
+  );
+};
+
+export default TodoList;
