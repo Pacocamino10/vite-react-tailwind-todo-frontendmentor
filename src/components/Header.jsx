@@ -17,7 +17,7 @@ const Header = () => {
       localStorage.setItem("theme","light")
 
     }
-  }, [darkMode]);
+  }, [darkMode]);    
 
   return (
     <header className="container mx-auto px-4 pt-8 transition-all duration-1000 container mx-auto px-4  mt-8 md:max-w-xl" >
